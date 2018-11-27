@@ -1,0 +1,327 @@
+*
+{
+  margin: 0;
+  padding: 0;
+
+}
+/*---navigation---*/
+#nav-bar
+{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand img
+{
+  height: 40px;
+  length: 30px;
+}
+
+.navbar-nav li
+{
+  padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover
+{
+  color: red!important;
+}
+
+.navbar
+{
+  background: darkgrey;
+}
+
+.navbar-toggler
+{
+  border:  none!important;
+}
+
+.nav-link
+{
+  color: blue;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*------Slider------*/
+#slider
+{
+  width: 100%;
+
+}
+
+.carousel-caption
+{
+  top: 50%;
+  transform: translatY(-50%);
+  bottom: initial!important;
+}
+
+.carousel-caption h5
+{
+  color: magenta;
+  size: 42px;
+}
+
+
+/* TODO: make slider images more easily viewable*/
+.img-fluid
+{
+  width: 100%;
+  height: auto;
+}
+
+/* ---- About ---- */
+
+#about
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#about .btn
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-content
+{
+padding-top: 20px;
+
+}
+
+.skills-bar p
+{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.progress-background
+{
+    border-radius: 16px;
+}
+
+.progress
+{
+  border-radius: 16px !important;
+  margin-bottom: 20px;
+}
+
+/* ----- Services ---- */
+#services
+{
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#services h1
+{
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+
+#services h1::after /*--- not sure why there are two semicolons*/
+{
+  content: ''; /*this creates the underline*/
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.services /* this comes from row services on line 124, but i don't know why it doesn't include row as well*/
+{
+  margin-top: 40px;
+}
+
+.icon
+{
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+#servies p
+{
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.services .col-md-3:hover
+{
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/*  === current news ===*/
+#news
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+/*  Why can I just write h1?*/
+h1
+{
+  text-align: center;
+  color: #555 !important;
+  padding-bottom: 10px;
+
+}
+
+h1::after
+{
+  content: '';
+  background: #007bff;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.cover-shot
+{
+  margin-top: 25px;
+}
+
+.cover-shot .img-box
+{
+  opacity: 1;
+  display: block;
+  position: relative;
+  /* position: relative; */
+}
+
+.cover-shot .img-box img
+{
+  filter: grayscale(1);
+}
+
+.cover-shot .img-box img:hover
+{
+  filter: grayscale(0);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.cover-shot h2
+{
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #007bff !important;
+}
+
+.cover-shot h3
+{
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cover-shot p
+{
+  text-align: left;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+#news .fa /*---not sure what fa does --*/
+{
+height: 25px;
+width: 25px;
+color: #007bff !important;
+background: #fff;
+padding: 4px;
+border-radius: 50%;
+}
+
+.img-box ul
+{
+  padding: 0px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.img-box ul li
+{
+  padding: 5px;
+  display: inline-block;
+}
+
+.img-box:hover ul
+{
+  opacity: 1;
+}
+
+.img-box ul, .img-box ul li
+{
+  transition: 0.5s;
+}
+
+#facts
+{
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#facts h1
+{
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+
+#services h1::after /*--- not sure why there are two semicolons*/
+{
+  content: ''; /*this creates the underline*/
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,28 @@
+these are just notes for what todo
+1. Make photos on slides more easily viewable********
+2.learn how to do stuff beyond the two columns created by col-md-6 in around row 87
+3. create text files to store text in the project folder
+4. in css know when to use # versus .
+5. learn what "<p> Adobe photoshop </p>" does
+6. figure out how to change color of progress bar text
+7. figure out why .services is that and not .row services
+8. figure out why I can just write h1 in the css file on line ~185
+9. learn what <ul> is ---> defines an unordered list
+10. figure out what fa does on line ~242 on css
+11. *** when you do style="max-width:100%;height:auto;" class = "img-responsive"
+- it may make sense to put it in the css file rather than coding it into html
+this would be good to do because it helps organize the code more I think
+
+
+NEXT STEPS:
+get links to websites
+get links to facts
+review with others
+get links on nav bar
+add information to everything --> get citations
+get a bottom page
+figure out how to get on github***
+look to involve interactive components
+fix slides at beginning - make more interactive
+get understanding of exact layout of website
+get understanding of effective websites by looking at other websites
