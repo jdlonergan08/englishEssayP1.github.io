@@ -5,70 +5,150 @@
 
 }
 /*---navigation---*/
+
 #nav-bar
 {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  padding: 0;
+  width: 100%;
+  height: 50px;
 }
 
-.navbar-brand img
-{
-  height: 40px;
-  length: 30px;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
-.navbar-nav li
-{
-  padding: 0 10px;
+li {
+  float: left;
 }
 
-.navbar-nav li a
+li a {
+  font-family:"Times New Roman", Times, serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #black;
+  text-decoration: none;
+  color: lightblue;
+}
+
+#intro
 {
-  float: right;
+  padding: 0;
+  width: 100%
+  height: 100px;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered h4{
+  font-family:"Times New Roman", Times, serif;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.alsoCentered h4{
+  position: absolute;
+  top: 20%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+}
+
+#summary
+{
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('img/sahara4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #555;
+}
+
+#summary h1
+{
+  font-family:"Times New Roman", Times, serif;
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+
+#summary h5
+{
+  font-family:"Times New Roman", Times, serif;
   text-align: left;
 }
 
-#nav-bar ul li a:hover
-{
-  color: red!important;
+.column {
+    float: left;
+    width: 50%;
 }
 
-.navbar
+.column p
 {
-  background: darkgrey;
+  font-family:"Times New Roman", Times, serif;
+  float: right;
 }
 
-.navbar-toggler
+.column img
 {
-  border:  none!important;
+  padding-left: 40px;
 }
 
-.nav-link
-{
-  color: blue;
-  font-weight: 600;
-  font-size: 16px;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+
+
+#transition
+{
+  display: block;
+  padding-bottom: 0px;;
+  background: black;
+}
+
+#transition h1
+{
+    text-align: right;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 4vw;
+    color: lightgrey;
+}
+
 
 /*------Slider------*/
 #slider
 {
   width: 100%;
-
 }
+
+
 
 .carousel-caption
 {
-  top: 50%;
-  transform: translatY(-50%);
+  top: 5%;
   bottom: initial!important;
-}
-
-.carousel-caption h5
-{
-  color: magenta;
-  size: 42px;
+  overflow:inherit;
 }
 
 
@@ -76,178 +156,86 @@
 .img-fluid
 {
   width: 100%;
-  height: auto;
+  height:inherit;
+  -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%);
+
 }
+
+.carousel-caption * {
+  box-sizing: border-box;
+}
+
+.carousel-caption body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: red;
+  overflow:
+}
+
+/* Style the header */
+.carousel-caption header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+.carousel-caption section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+.carousel-caption nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+.carousel-caption nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+.carousel-caption article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+  overflow: auto;
+
+}
+
+/* Style the footer */
+.carousel-caption footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+.carousel-caption @media (max-width: 600px) {
+  .carousel-caption section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+/* ------ potential effects -------*/
+.w3
 
 /* ---- About ---- */
-
-#about
-{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #555;
-}
-
-#about .btn
-{
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.about-content
-{
-padding-top: 20px;
-
-}
-
-.skills-bar p
-{
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-.progress-background
-{
-    border-radius: 16px;
-}
-
-.progress
-{
-  border-radius: 16px !important;
-  margin-bottom: 20px;
-}
-
-/* ----- Services ---- */
-#services
-{
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/background1.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #efefef !important;
-  background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#services h1
-{
-  text-align: center;
-  color: #efefef !important;
-  padding-bottom: 10px;
-}
-
-#services h1::after /*--- not sure why there are two semicolons*/
-{
-  content: ''; /*this creates the underline*/
-  background: #efefef;
-  display: block;
-  height: 3px;
-  width: 170px;
-  margin: 20px auto 5px;
-}
-
-.services /* this comes from row services on line 124, but i don't know why it doesn't include row as well*/
-{
-  margin-top: 40px;
-}
-
-.icon
-{
-  font-size: 40px;
-  margin: 20px auto;
-  padding: 20px;
-  height: 80px;
-  width: 80px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-#servies p
-{
-  font-size: 14px;
-  margin-top: 20px;
-  color: #ccc;
-}
-
-.services .col-md-3:hover
-{
-  background: #007bff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-/*  === current news ===*/
-#news
-{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #555;
-}
-/*  Why can I just write h1?*/
-h1
-{
-  text-align: center;
-  color: #555 !important;
-  padding-bottom: 10px;
-
-}
-
-h1::after
-{
-  content: '';
-  background: #007bff;
-  display: block;
-  height: 3px;
-  width: 170px;
-  margin: 20px auto 5px;
-}
-
-.cover-shot
-{
-  margin-top: 25px;
-}
-
-.cover-shot .img-box
-{
-  opacity: 1;
-  display: block;
-  position: relative;
-  /* position: relative; */
-}
-
-.cover-shot .img-box img
-{
-  filter: grayscale(1);
-}
-
-.cover-shot .img-box img:hover
-{
-  filter: grayscale(0);
-  transition: 0.7s;
-  cursor: pointer;
-}
-
-.cover-shot h2
-{
-  text-align: left;
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 15px;
-  color: #007bff !important;
-}
-
-.cover-shot h3
-{
-  text-align: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.cover-shot p
-{
-  text-align: left;
-  font-size: 15px;
-  margin-top: 8px;
-}
 
 #news .fa /*---not sure what fa does --*/
 {
